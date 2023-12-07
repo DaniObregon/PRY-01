@@ -1,0 +1,148 @@
+/* POPPINS FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans serif;
+}
+
+body {
+  background-image: url("../img/bg-bahia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
+}
+
+span {
+  color: #fff;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+header {
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-field .input {
+  height: 45px;
+  width: 87%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+  padding: 0 0 0 42px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: color 1s;
+}
+
+.input-field .input:focus {
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+}
+
+i {
+  position: relative;
+  top: -31px;
+  left: 17px;
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.submit {
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  outline: none;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.6);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.left {
+  display: flex;
+}
+
+label a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.singin-with-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px; /* Espaciado entre el botón de inicio de sesión y los botones adicionales */
+}
+
+.singin-with-button {
+  width: calc(50% - 7.5px); /* Ancho del 50% menos el espacio de separación */
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.singin-with-button:hover {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.6);
+}
+
+.spacer {
+  width: 15px; /* Espacio de separación entre los dos botones adicionales */
+}
+
+.singin-with-button img {
+  width: 20px; /* Ajusta el tamaño del ícono según sea necesario */
+  margin-right: 10px; /* Ajusta el espaciado entre el ícono y el texto */
+}
+
+.icon {
+  width: 20px; /* Ajusta el ancho según sea necesario */
+  height: 20px; /* Ajusta la altura según sea necesario */
+  margin-right: 10px;
+}
