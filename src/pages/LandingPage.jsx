@@ -9,9 +9,16 @@ export const LandingPage = () => {
 
   const logout = () => {
     localStorage.clear();
-    window.location.reload();
     navigate("/");
   };
+
+  useEffect(() => {
+    const userEmail = localStorage.getItem("email");
+    if (!userEmail) {
+      navigate("/");
+      console.log("Intentaste entrar a la pagina principal sin estar logueado");
+    }
+  });
 
   return (
     <div>
